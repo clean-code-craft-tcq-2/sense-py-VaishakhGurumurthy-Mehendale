@@ -1,4 +1,4 @@
-
+import math
 def calculateStats(numbers):
   if(len(numbers)>0):
     avgValue = sum(numbers) / len(numbers)
@@ -7,4 +7,4 @@ def calculateStats(numbers):
     result = { 'avg':avgValue, 'min':minimumValue, 'max':maximumValue }
     return result
   else:
-    return { 'avg':float("nan"), 'min':float("nan"), 'max':float("nan") }
+    return { 'avg':math.nan, 'min':math.nan, 'max':math.nan }
